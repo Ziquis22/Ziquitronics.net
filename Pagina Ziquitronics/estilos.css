@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    display: block;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+#fondo {
+    background-image: url("img/camras_tarjeta.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+header {
+    background-color: transparent;
+    color: #fff;
+    padding: 30px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.logo span {
+    color: blue;
+}
+
+#portada-textos {
+    padding: 0 5%;
+}
+
+#portada-textos h2 {
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 1.5;
+    width: 80%;
+    margin: 10% 0 5% 0;
+}
+
+#portada-textos a {
+    background-color: yellow;
+    color: #333;
+    padding: 20px 60px;
+    border-radius: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 10%;
+}
+
+#razones {
+    margin: 10% auto;
+}
+
+#razones h2 {
+    font-size: 70px;
+}
+
+.cont-razones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.razon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.razon img {
+    margin-right: 40px;
+}
+
+.razon-texto p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#membresias-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+#membresias h2 {
+    font-size: 60px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.membresia-card {
+    border-radius: 10px;
+    background-color: #111111;
+    width: 25%;
+}
+
+.membresia-card-header {
+    border-bottom: 1px solid #000000;
+    padding: 30px;
+}
+
+.membresia-card-header h3 {
+    font-size: 26px;
+    text-align: center;
+    margin: 0;
+}
+
+.membresia-card-header p {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.membresia-card-content {
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    height: 330px;
+}
+
+.membresia-card-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.membresia-card-content i {
+    margin-right: 10px;
+}
+
+.membresia-card-footer {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.btn-compra {
+    padding: 10px 40px;
+    background-color: yellow;
+    color: black;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#nosotros {
+    margin: 10% auto;
+}
+
+#nosotros h2 {
+    font-size: 60px;
+}
+
+.nosotros-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.nosotros-content {
+    width: 40%;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.nosotros-img {
+    width: 50%;
+}
+
+.nosotros-img img {
+    width: 100%;
+}
+
+#contacto {
+    margin: 10% auto;
+}
+
+#contacto h2 {
+    font-size: 60px;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+#contacto form {
+    border-radius: 10px;
+    background-color: #111111;
+    padding: 60px 30px;
+}
+
+#contacto form .row {
+    margin-bottom: 40px;
+}
+
+#contacto form label {
+    font-size: 30px;
+    font-weight: bold;
+    width: 200px;
+    display: inline-block;
+}
+
+#contacto form input {
+    width: 70%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#comments {
+    display: block;
+    height: 300px;
+    width: 70%;
+    margin-left: 200px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 10% auto;
+}
+
+#footer h6 {
+    font-size: 30px;
+    margin: 0 0 30px 0;
+}
+
+#footer h1 {
+    margin: 0 0 30px 0;
+}
+
+.footer-info {
+    width: 20%;
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.footer-direccion {
+    width: 20%;
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.footer-direccion p {
+    margin: 0;
+}
+
+.footer-contacto {
+    width: 20%;
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.footer-contacto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-contacto li {
+    display: flex;
+    align-items: center;
+}
+
+.footer-contacto i {
+    margin-right: 10px;
+}
+
+.footer-redes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.footer-redes a i {
+    font-size: 25px;
+    color: #ffffff;
+    margin-right: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+
+ .footer-legal {
+    width: 20%;
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 18px;
+ }

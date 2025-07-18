@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro - Ziquitronics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --primary-color: #1976d2;
+            --primary-hover: #1565c0;
+            --background: #f4f4f4;
+            --container-bg: #fff;
+            --text-main: #333;
+            --text-secondary: #555;
+            --border-radius: 8px;
+            --input-border: #bbb;
+            --shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        body {
+            background: var(--background);
+            color: var(--text-main);
+        }
+
+        .registro-container {
+            background: var(--container-bg);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            max-width: 400px;
+            margin: 60px auto;
+            padding: 30px 40px;
+        }
+
+        .registro-container h2 {
+            color: var(--primary-color);
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        label {
+            color: var(--text-secondary);
+            display: block;
+            font-size: 15px;
+            margin-bottom: 6px;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--input-border);
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 15px;
+            transition: border-color 0.2s;
+        }
+
+        input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+            border-color: var(--primary-color);
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: var(--primary-color);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+            letter-spacing: 1px;
+        }
+
+        button:hover {
+            background: var(--primary-hover);
+        }
+
+        .login-link {
+            display: block;
+            text-align: center;
+            margin-top: 18px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 15px;
+            transition: text-decoration 0.2s;
+        }
+
+        .login-link:hover {
+            text-decoration: underline;
+        }
+        
+        * {
+            font-family: 'montserrat', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="registro-container">
+        <h2>Crear Cuenta</h2>
+        <form action="procesar_registro.php" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            <div class="form-group">
+                <label for="usuario">Nombre de usuario</label>
+                <input type="text" id="usuario" name="usuario" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Registrarse</button>
+        </form>
+        <a class="login-link" href="Login.html">¿Ya tienes cuenta? Inicia sesión</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+   font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #000;
+    color: #fff;
+}
+.container {
+    display: block;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.barra-superior {
+  width: 100%;
+  height: 60px;
+  background-color: #000; /* O usa #111 si quieres un poco más gris */
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.barra-superior .logo {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.barra-superior .logo span {
+  color: blue;
+}
+
+.barra-superior nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.barra-superior nav li {
+  margin: 0 20px;
+}
+
+.barra-superior nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.barra-superior nav a:hover {
+  color: yellow;
+}
+
+.logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.logo span {
+    color: blue;
+}
+
+.contenido {
+  padding-top: 80px; /* Esto evita que el contenido se esconda detrás de la barra */
+  padding: 30px 0;
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+h1, h2, h3 {
+  color: #ffffff; /* o algún azul claro si prefieres */
+}
+
+p, li {
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.integrantes-scroll {
+  display: flex;
+  overflow-x: auto;
+  padding: 20px 0;
+  gap: 20px;
+  scroll-snap-type: x mandatory;
+}
+
+.integrante {
+  flex: 0 0 auto;
+  width: 180px;
+  scroll-snap-align: start;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #111; /* Gris oscuro */
+  border: 1px solid #333; /* Borde más oscuro */
+  color: #fff;
+}
+
+.integrante img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.nombre {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #082494;
+}
+
+.integrantes-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.integrantes-scroll::-webkit-scrollbar-thumb {
+  background-color: #0a2a43;
+  border-radius: 4px;
+}
+
